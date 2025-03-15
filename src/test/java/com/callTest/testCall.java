@@ -5,16 +5,21 @@ import java.io.IOException;
 import org.testng.annotations.Test;
 
 import com.baseClass.baseClass;
+import com.baseClass.performFunctionalities;
 
-public class testCall extends baseClass {
+public class testCall extends performFunctionalities  {
 	
-	@Test
-	public static void testCall() throws IOException {
+	@Test()
+	public static void method_one() throws IOException {
+		
 		configReader();
 		intBrowser("chrome");
 		invokeUrl();
-		tearDown();
-		
+		selectCountry();
+		tripType();
+		selectCity();
 	}
+	
 
+	
 }

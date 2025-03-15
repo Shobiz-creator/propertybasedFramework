@@ -5,9 +5,7 @@
     <classes>
       <class name="com.callTest.testCall">
         <methods>
-          <include name="intBrowser"/>
-          <include name="tearDown"/>
-          <include name="invokeUrl"/>
+          <include name="method_fourth"/>
         </methods>
       </class> <!-- com.callTest.testCall -->
     </classes>

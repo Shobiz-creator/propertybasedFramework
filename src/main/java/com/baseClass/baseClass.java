@@ -3,6 +3,7 @@ package com.baseClass;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
@@ -12,6 +13,7 @@ import org.testng.annotations.Test;
 public class baseClass {
 	public static Properties prop;
 	public static WebDriver driver;
+	public static String browser;
 	
 	
 	public static void configReader() throws IOException {
@@ -45,6 +47,7 @@ public class baseClass {
 	public static void invokeUrl() {
 		driver.get(prop.getProperty("url"));
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
 		
 	}
