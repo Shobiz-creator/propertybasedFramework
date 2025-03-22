@@ -5,7 +5,11 @@
     <classes>
       <class name="com.callTest.testCall">
         <methods>
-          <include name="method_fourth"/>
+          <include name="method_eight"/>
+          <include name="tear_Down"/>
+          <include name="method_one"/>
+          <include name="method_two"/>
+          <include name="method_three"/>
         </methods>
       </class> <!-- com.callTest.testCall -->
     </classes>

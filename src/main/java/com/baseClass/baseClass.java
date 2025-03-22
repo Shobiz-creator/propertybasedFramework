@@ -1,5 +1,6 @@
 package com.baseClass;
 
+import org.testng.annotations.AfterMethod;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -15,7 +16,7 @@ public class baseClass {
 	public static WebDriver driver;
 	public static String browser;
 	
-	
+
 	public static void configReader() throws IOException {
 		try {
 			FileInputStream file = new FileInputStream("D:\\GitStuff\\Project_Main\\src\\test\\resources\\config.properties");
@@ -51,6 +52,7 @@ public class baseClass {
 		
 		
 	}
+	
 	
 	public static void tearDown() {
 		driver.close();

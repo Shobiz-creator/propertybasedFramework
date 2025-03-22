@@ -6,19 +6,17 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class performFunctionalities extends baseClass {
-	//public static WebDriverWait wait;
-	//Code For AutoSuggestive dropdown country
-	
-	
+	public static Actions act;
 	public static void selectCountry() {
 		
 		driver.findElement(By.xpath(prop.getProperty("country"))).sendKeys("IND"); //Entering Keyword to trigger autosuggestive menu.
-		//System.out.println(prop.getProperty("country"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));// implicit wait added so that all the element of the dropdown are loaded into the list
 		List <WebElement> options = driver.findElements(By.xpath(prop.getProperty("countryList")));// Created a common xpath which is common and holds all the country values.
 		for(WebElement option : options) { //iterated through values that has been stored into 
@@ -26,8 +24,6 @@ public class performFunctionalities extends baseClass {
 				option.click();
 				driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 				break;
-			}else {
-				System.out.println("Our service to the mentioned Location is yet to be initiated");
 			}
 		}
 		
@@ -40,12 +36,6 @@ public class performFunctionalities extends baseClass {
 	}
 	
 	public static void selectCity() {
-		//imported select class to select city from an static dropdown element.
-		
-		/*WebElement drop = driver.findElement(By.xpath(prop.getProperty("fromCity")));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		Select dropdown = new Select(drop);
-		dropdown.selectByValue("fromCityname");*/
 		
 		driver.findElement(By.xpath(prop.getProperty("fromCity"))).click();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -54,16 +44,23 @@ public class performFunctionalities extends baseClass {
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.findElement(By.xpath(prop.getProperty("toCityname"))).click();
 		
-		/*WebElement down = driver.findElement(By.xpath(prop.getProperty("toCity")));
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		Select opt = new Select(down);
-		opt.selectByValue("toCityname");*/
-		
-		
-		
-		
 	}
 	
+	public static void dateselection() {
+		driver.findElement(By.xpath(prop.getProperty("calendartool"))).click();
+		driver.findElement(By.xpath(prop.getProperty("monthselection"))).click();
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+		driver.findElement(By.xpath(prop.getProperty("dateselection"))).click();
+	}
 	
+	public static void scrollToElement() {
+		act = new Actions(driver);
+		WebElement element = driver.findElement(By.xpath(prop.getProperty("scrollElement")));
+		act.scrollToElement(element).build().perform();
+		String validate = element.getText();
+		//assert.AssertEquals("Validate","Tax Docs","The label is validated");		
+		Assert.assertEquals(validate,"Tax Docs","Error h nahi chalega");
 
+		
+	}
 }

@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.baseClass.baseClass">
+      <class name="com.callTest.testCall">
         <methods>
-          <include name="invokeUrl"/>
+          <include name="method_four"/>
+          <include name="method_three"/>
         </methods>
-      </class> <!-- com.baseClass.baseClass -->
+      </class> <!-- com.callTest.testCall -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
