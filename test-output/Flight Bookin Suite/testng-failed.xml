@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
-  <test thread-count="2" parallel="tests" name="Testtow(failed)">
+<suite name="Failed suite [Flight Bookin Suite]">
+  <test thread-count="5" name="Performing_Functionalities of_the app(failed)">
     <classes>
       <class name="com.callTest.testCallTwo">
         <methods>
           <include name="tear_Down"/>
           <include name="method_one"/>
-          <include name="method_two"/>
+          <include name="method_six"/>
           <include name="close"/>
           <include name="method_four"/>
+          <include name="method_seven"/>
+          <include name="method_two"/>
         </methods>
       </class> <!-- com.callTest.testCallTwo -->
     </classes>
-  </test> <!-- Testtow(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Performing_Functionalities of_the app(failed) -->
+</suite> <!-- Failed suite [Flight Bookin Suite] -->

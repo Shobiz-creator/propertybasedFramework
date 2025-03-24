@@ -2,6 +2,7 @@ package com.callTest;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
@@ -13,7 +14,7 @@ import org.testng.annotations.Test;
 import com.baseClass.baseClass;
 import com.baseClass.performFunctionalities;
 
-public class testCall extends performFunctionalities  {
+public class testCallOne extends performFunctionalities  {
 	
 	
 /*public static void method_one() throws IOException {
@@ -33,36 +34,12 @@ public class testCall extends performFunctionalities  {
 	@BeforeTest
 	public static void method_two() {
 		intBrowser("chrome");
-	}
-	@BeforeClass
-	public static void method_three() {
-		invokeUrl();
-	}
-	@Test(groups="CountrySelections")
-	public static void method_four() {
-		selectCountry();
-		
-	}
-	@Test(groups="CountrySelections")
-	public static void method_five() {
-		tripType();
-	}
-	@Test(groups="CountrySelections")
-	public static void method_six() {
-		selectCity();
-	}
-	@Test(dependsOnMethods="method_six")
-	public static void method_seven() {
-		dateselection();
+		System.out.println("Method_two");
 	}
 	@Test
-	public static void method_eight() {
-		scrollToElement();
-	}
-	@AfterTest
-	public static void tear_Down() {
-		tearDown();
-		System.out.println("Tear Down Complete");
+	public static void method_three() {
+		
+		invokeUrl();
 	}
 	
 }
