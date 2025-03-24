@@ -19,4 +19,13 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+	<profiles>
+		<profile>
+			<id>Regression</id>
+			<build>
+				<plugins>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
 </project>
