@@ -9,6 +9,7 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class baseClass {
@@ -41,6 +42,15 @@ public class baseClass {
 				driver = new ChromeDriver();
 			}	
 		}catch(Exception e) {
+			e.printStackTrace();
+		}
+		try {
+			if(browser.equalsIgnoreCase("firefox")) {
+				System.setProperty("webdriver.geckodriver.driver", "C:\\Users\\dell\\Desktop\\Project\\geckodriver-v0.36.0-win32\\geckodriver.exe");
+				driver = new FirefoxDriver();
+			}
+			
+		} catch(Exception e) {
 			e.printStackTrace();
 		}
 	}

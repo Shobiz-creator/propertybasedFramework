@@ -151,21 +151,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.callTest.testCallOne</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="method_three">
-                  </a> <!-- method_three -->
-                  <span class="method-name">method_three</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.callTest.testCallTwo</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -213,6 +198,21 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.callTest.testCallOne</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="method_three">
+                  </a> <!-- method_three -->
+                  <span class="method-name">method_three</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -222,7 +222,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+&lt;suite name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.baseClass.baseClass&quot;/&gt;
@@ -287,36 +287,36 @@ data.addRows(7);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'method_three')
 data.setCell(0, 2, 'com.callTest.testCallOne')
-data.setCell(0, 3, 1620);
+data.setCell(0, 3, 1331);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'method_four')
 data.setCell(1, 2, 'com.callTest.testCallTwo')
-data.setCell(1, 3, 709);
+data.setCell(1, 3, 750);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'method_six')
+data.setCell(2, 1, 'method_three')
 data.setCell(2, 2, 'com.callTest.testCallTwo')
-data.setCell(2, 3, 699);
+data.setCell(2, 3, 521);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'method_three')
+data.setCell(3, 1, 'method_six')
 data.setCell(3, 2, 'com.callTest.testCallTwo')
-data.setCell(3, 3, 604);
+data.setCell(3, 3, 480);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'method_eight')
 data.setCell(4, 2, 'com.callTest.testCallTwo')
-data.setCell(4, 3, 329);
+data.setCell(4, 3, 335);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'method_seven')
 data.setCell(5, 2, 'com.callTest.testCallTwo')
-data.setCell(5, 3, 308);
+data.setCell(5, 3, 315);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'method_five')
 data.setCell(6, 2, 'com.callTest.testCallTwo')
-data.setCell(6, 3, 95);
+data.setCell(6, 3, 92);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 seconds</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -337,9 +337,9 @@ return data;
             <div class="ignored-class-div">
               <span class="ignored-class-name">com.callTest.testCallTwo</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">method_two</span>
-                <br/>
                 <span class="ignored-method-name">method_one</span>
+                <br/>
+                <span class="ignored-method-name">method_two</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -358,46 +358,46 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-test before">
                 <span class="method-name">method_two</span>
-                <span class="method-start">20 ms</span>
+                <span class="method-start">22 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">method_three</span>
-                <span class="method-start">2256 ms</span>
+                <span class="method-start">1602 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.callTest.testCallTwo</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">method_four</span>
-                <span class="method-start">3888 ms</span>
+                <span class="method-start">2943 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_six</span>
-                <span class="method-start">4604 ms</span>
+                <span class="method-start">3699 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_three</span>
-                <span class="method-start">5307 ms</span>
+                <span class="method-start">4182 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_eight</span>
-                <span class="method-start">5913 ms</span>
+                <span class="method-start">4706 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_five</span>
-                <span class="method-start">6243 ms</span>
+                <span class="method-start">5043 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">method_seven</span>
-                <span class="method-start">6342 ms</span>
+                <span class="method-start">5139 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tear_Down</span>
-                <span class="method-start">6651 ms</span>
+                <span class="method-start">5455 ms</span>
               </div> <!-- configuration-test after -->
               <div class="configuration-suite after">
                 <span class="method-name">close</span>
-                <span class="method-start">6992 ms</span>
+                <span class="method-start">5795 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

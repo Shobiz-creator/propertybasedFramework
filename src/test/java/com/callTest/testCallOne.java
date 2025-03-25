@@ -33,7 +33,7 @@ public class testCallOne extends performFunctionalities  {
 	}
 	@BeforeTest
 	public static void method_two() {
-		intBrowser("chrome");
+		intBrowser(System.getProperty("browser"));
 		System.out.println("Method_two");
 	}
 	@Test
