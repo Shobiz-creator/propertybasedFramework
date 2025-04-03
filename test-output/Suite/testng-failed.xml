@@ -1,17 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Suite]">
-  <test thread-count="2" parallel="tests" name="Testtow(failed)">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Setup - Config and Browser(failed)">
     <classes>
-      <class name="com.callTest.testCallTwo">
+      <class name="com.baseClass.baseClass">
         <methods>
-          <include name="tear_Down"/>
-          <include name="method_one"/>
-          <include name="method_two"/>
-          <include name="close"/>
-          <include name="method_four"/>
+          <include name="intBrowser"/>
+          <include name="invokeUrl"/>
         </methods>
-      </class> <!-- com.callTest.testCallTwo -->
+      </class> <!-- com.baseClass.baseClass -->
     </classes>
-  </test> <!-- Testtow(failed) -->
+  </test> <!-- Setup - Config and Browser(failed) -->
+  <test thread-count="5" name="Functionality Test Cases(failed)">
+    <classes>
+      <class name="com.baseClass.performFunctionalities">
+        <methods>
+          <include name="scrollToElement"/>
+          <include name="selectCity"/>
+          <include name="tripType"/>
+          <include name="tearDown"/>
+          <include name="selectCountry"/>
+          <include name="intBrowser"/>
+          <include name="dateselection"/>
+          <include name="invokeUrl"/>
+        </methods>
+      </class> <!-- com.baseClass.performFunctionalities -->
+    </classes>
+  </test> <!-- Functionality Test Cases(failed) -->
 </suite> <!-- Failed suite [Suite] -->

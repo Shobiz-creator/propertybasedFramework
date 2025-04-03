@@ -29,17 +29,21 @@ public class testCallOne extends performFunctionalities  {
 	
 	@BeforeSuite
 	public static void method_one() throws IOException {
-		configReader();
+		baseClass.configReader();
+		
 	}
 	@BeforeTest
 	public static void method_two() {
-		intBrowser(System.getProperty("browser"));
-		System.out.println("Method_two");
+		baseClass.intBrowser(prop.getProperty("browser"));
+		
+		
+		
+		
 	}
 	@Test
 	public static void method_three() {
 		
-		invokeUrl();
+		baseClass.invokeUrl();
 	}
 	
 }

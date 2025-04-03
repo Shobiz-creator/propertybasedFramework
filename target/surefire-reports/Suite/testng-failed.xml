@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" verbose="0">
+  <test thread-count="5" name="Config and Browser invoke TestCase_01(failed)" verbose="0">
+    <classes>
+      <class name="com.baseClass.baseClass">
+        <methods>
+          <include name="intBrowser"/>
+          <include name="invokeUrl"/>
+        </methods>
+      </class> <!-- com.baseClass.baseClass -->
+    </classes>
+  </test> <!-- Config and Browser invoke TestCase_01(failed) -->
+  <test thread-count="5" name="Functionality Class TestCase_02(failed)" verbose="0">
+    <classes>
+      <class name="com.baseClass.performFunctionalities">
+        <methods>
+          <include name="scrollToElement"/>
+          <include name="selectCity"/>
+          <include name="tripType"/>
+          <include name="tearDown"/>
+          <include name="intBrowser"/>
+          <include name="selectCountry"/>
+          <include name="dateselection"/>
+          <include name="invokeUrl"/>
+        </methods>
+      </class> <!-- com.baseClass.performFunctionalities -->
+    </classes>
+  </test> <!-- Functionality Class TestCase_02(failed) -->
+</suite> <!-- Failed suite [Suite] -->

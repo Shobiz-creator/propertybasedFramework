@@ -1,64 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="3" total="11" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-25T09:58:33 IST" name="Suite" finished-at="2025-03-25T09:58:38 IST" duration-ms="5718">
+  <suite started-at="2025-04-03T18:31:54 IST" name="Suite" finished-at="2025-04-03T18:32:00 IST" duration-ms="6701">
     <groups>
-      <group name="CountrySelections">
-        <method signature="testCallTwo.method_four()[pri:0, instance:com.callTest.testCallTwo@10683d9d]" name="method_four" class="com.callTest.testCallTwo"/>
-        <method signature="testCallTwo.method_six()[pri:0, instance:com.callTest.testCallTwo@10683d9d]" name="method_six" class="com.callTest.testCallTwo"/>
-        <method signature="testCallTwo.method_five()[pri:0, instance:com.callTest.testCallTwo@10683d9d]" name="method_five" class="com.callTest.testCallTwo"/>
-      </group> <!-- CountrySelections -->
     </groups>
-    <test started-at="2025-03-25T09:58:33 IST" name="Test" finished-at="2025-03-25T09:58:38 IST" duration-ms="5718">
-      <class name="com.callTest.testCallTwo">
-        <test-method signature="method_four()[pri:0, instance:com.callTest.testCallTwo@10683d9d]" started-at="2025-03-25T09:58:36 IST" name="method_four" finished-at="2025-03-25T09:58:36 IST" duration-ms="750" status="PASS">
+    <test started-at="2025-04-03T18:31:54 IST" name="Setup - Config and Browser" finished-at="2025-04-03T18:31:58 IST" duration-ms="4580">
+      <class name="com.baseClass.baseClass">
+        <test-method signature="configReader()[pri:0, instance:com.baseClass.baseClass@799f10e1]" started-at="2025-04-03T18:31:54 IST" name="configReader" finished-at="2025-04-03T18:31:54 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method_four -->
-        <test-method signature="method_six()[pri:0, instance:com.callTest.testCallTwo@10683d9d]" started-at="2025-03-25T09:58:36 IST" name="method_six" finished-at="2025-03-25T09:58:37 IST" duration-ms="480" status="PASS">
+        </test-method> <!-- configReader -->
+        <test-method signature="intBrowser()[pri:0, instance:com.baseClass.baseClass@799f10e1]" started-at="2025-04-03T18:31:54 IST" name="intBrowser" finished-at="2025-04-03T18:31:56 IST" duration-ms="2648" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method_six -->
-        <test-method signature="method_three()[pri:0, instance:com.callTest.testCallTwo@10683d9d]" started-at="2025-03-25T09:58:37 IST" name="method_three" finished-at="2025-03-25T09:58:37 IST" duration-ms="521" status="PASS">
+        </test-method> <!-- intBrowser -->
+        <test-method signature="invokeUrl()[pri:0, instance:com.baseClass.baseClass@799f10e1]" started-at="2025-04-03T18:31:56 IST" name="invokeUrl" finished-at="2025-04-03T18:31:58 IST" duration-ms="1852" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method_three -->
-        <test-method signature="method_eight()[pri:0, instance:com.callTest.testCallTwo@10683d9d]" started-at="2025-03-25T09:58:37 IST" name="method_eight" finished-at="2025-03-25T09:58:38 IST" duration-ms="335" status="PASS">
+        </test-method> <!-- invokeUrl -->
+      </class> <!-- com.baseClass.baseClass -->
+    </test> <!-- Setup - Config and Browser -->
+    <test started-at="2025-04-03T18:31:58 IST" name="Functionality Test Cases" finished-at="2025-04-03T18:32:00 IST" duration-ms="2046">
+      <class name="com.baseClass.performFunctionalities">
+        <test-method signature="dateselection()[pri:0, instance:com.baseClass.performFunctionalities@752325ad]" started-at="2025-04-03T18:31:58 IST" name="dateselection" finished-at="2025-04-03T18:31:59 IST" duration-ms="388" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method_eight -->
-        <test-method signature="method_five()[pri:0, instance:com.callTest.testCallTwo@10683d9d]" started-at="2025-03-25T09:58:38 IST" name="method_five" finished-at="2025-03-25T09:58:38 IST" duration-ms="92" status="PASS">
+        </test-method> <!-- dateselection -->
+        <test-method signature="scrollToElement()[pri:0, instance:com.baseClass.performFunctionalities@752325ad]" started-at="2025-04-03T18:31:59 IST" name="scrollToElement" finished-at="2025-04-03T18:31:59 IST" duration-ms="343" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method_five -->
-        <test-method signature="method_seven()[pri:0, instance:com.callTest.testCallTwo@10683d9d]" started-at="2025-03-25T09:58:38 IST" name="method_seven" finished-at="2025-03-25T09:58:38 IST" depends-on-methods="com.callTest.testCallTwo.method_six" duration-ms="315" status="PASS">
+        </test-method> <!-- scrollToElement -->
+        <test-method signature="selectCity()[pri:0, instance:com.baseClass.performFunctionalities@752325ad]" started-at="2025-04-03T18:31:59 IST" name="selectCity" finished-at="2025-04-03T18:32:00 IST" duration-ms="456" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method_seven -->
-        <test-method is-config="true" signature="tear_Down()[pri:0, instance:com.callTest.testCallTwo@10683d9d]" started-at="2025-03-25T09:58:38 IST" name="tear_Down" finished-at="2025-03-25T09:58:38 IST" duration-ms="279" status="PASS">
+        </test-method> <!-- selectCity -->
+        <test-method signature="selectCountry()[pri:0, instance:com.baseClass.performFunctionalities@752325ad]" started-at="2025-04-03T18:32:00 IST" name="selectCountry" finished-at="2025-04-03T18:32:00 IST" duration-ms="710" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- tear_Down -->
-        <test-method is-config="true" signature="close()[pri:0, instance:com.callTest.testCallTwo@10683d9d]" started-at="2025-03-25T09:58:38 IST" name="close" finished-at="2025-03-25T09:58:38 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- selectCountry -->
+        <test-method signature="tripType()[pri:0, instance:com.baseClass.performFunctionalities@752325ad]" started-at="2025-04-03T18:32:00 IST" name="tripType" finished-at="2025-04-03T18:32:00 IST" duration-ms="134" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- close -->
-      </class> <!-- com.callTest.testCallTwo -->
-      <class name="com.callTest.testCallOne">
-        <test-method is-config="true" signature="method_one()[pri:0, instance:com.callTest.testCallOne@1573f9fc]" started-at="2025-03-25T09:58:33 IST" name="method_one" finished-at="2025-03-25T09:58:33 IST" duration-ms="15" status="PASS">
+        </test-method> <!-- tripType -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.baseClass.performFunctionalities@752325ad]" started-at="2025-04-03T18:32:00 IST" name="tearDown" finished-at="2025-04-03T18:32:01 IST" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method_one -->
-        <test-method is-config="true" signature="method_two()[pri:0, instance:com.callTest.testCallOne@1573f9fc]" started-at="2025-03-25T09:58:33 IST" name="method_two" finished-at="2025-03-25T09:58:34 IST" duration-ms="1539" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_two -->
-        <test-method signature="method_three()[pri:0, instance:com.callTest.testCallOne@1573f9fc]" started-at="2025-03-25T09:58:34 IST" name="method_three" finished-at="2025-03-25T09:58:36 IST" duration-ms="1331" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- method_three -->
-      </class> <!-- com.callTest.testCallOne -->
-    </test> <!-- Test -->
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.baseClass.performFunctionalities -->
+    </test> <!-- Functionality Test Cases -->
   </suite> <!-- Suite -->
 </testng-results>

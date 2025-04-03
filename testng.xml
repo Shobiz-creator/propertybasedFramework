@@ -1,9 +1,21 @@
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="com.baseClass.baseClass"/>
-      <class name="com.callTest.testCallOne"/>
-      <class name="com.callTest.testCallTwo"/>
-    </classes>
-  </test> <!-- Test -->
-</suite> <!-- Suite -->
+
+    <test name="Setup - Config and Browser">
+        <classes>
+            <class name="com.baseClass.baseClass" />
+        </classes>
+    </test>
+
+
+    <test name="Functionality Test Cases">
+        <classes>
+            <class name="com.baseClass.performFunctionalities" />
+            <methods>
+            <exclude name = "configReader"/>
+            <exclude name = "intBrowser"/>
+            <exclude name = "invokeUrl"/>
+            </methods>
+        </classes>
+    </test>
+
+</suite>

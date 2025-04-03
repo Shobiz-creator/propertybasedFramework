@@ -3,15 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.callTest.testCall">
+      <class name="com.baseClass.baseClass">
         <methods>
-          <include name="method_eight"/>
-          <include name="tear_Down"/>
-          <include name="method_one"/>
-          <include name="method_two"/>
-          <include name="method_three"/>
+          <include name="intBrowser"/>
+          <include name="invokeUrl"/>
         </methods>
-      </class> <!-- com.callTest.testCall -->
+      </class> <!-- com.baseClass.baseClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
